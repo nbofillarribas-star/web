@@ -1,0 +1,6 @@
+{
+  "name": "BuyTevora",
+  "description": "BuyTevora — Gran apertura el 15 de octubre de 2026. Tienda de tecnología física y online.",
+  "permissions": [],
+  "capabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

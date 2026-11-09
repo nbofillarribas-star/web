@@ -1,0 +1,78 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+@import 'shadcn/tailwind.css';
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --font-sans: var(--font-manrope), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-cormorant), ui-serif, Georgia, serif;
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-foreground: var(--foreground);
+  --color-background: var(--background);
+  --color-sand: var(--sand);
+  --color-taupe: var(--taupe);
+  --color-espresso: var(--espresso);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --ease-elegant: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:root {
+  color-scheme: light;
+  /* Cream 50 */
+  --background: #f5f3ee;
+  /* Brown 900 */
+  --foreground: #29251f;
+  --card: #ffffff;
+  --card-foreground: #29251f;
+  --popover: #ffffff;
+  --popover-foreground: #29251f;
+  /* Taupe 400 */
+  --primary: #8a6f55;
+  --primary-foreground: #ffffff;
+  /* Cream 100 */
+  --secondary: #e1ded5;
+  --secondary-foreground: #29251f;
+  --muted: #ece8e0;
+  --muted-foreground: #6b6158;
+  --accent: #c8b6a4;
+  --accent-foreground: #29251f;
+  --destructive: #a13d2d;
+  --border: #d5cfc5;
+  --input: #d5cfc5;
+  --ring: #987f63;
+  --sand: #c8b6a4;
+  --taupe: #987f63;
+  --espresso: #4b4036;
+  --radius: 0.125rem;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+}
